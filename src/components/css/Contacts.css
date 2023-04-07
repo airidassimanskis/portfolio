@@ -110,6 +110,10 @@ contacts-input:valid ~ label {
     transform: translate3d(100%, 0, 0);
 }
 
+.contacts-button:hover {
+    background-color: #52525e;
+}
+
 .contacts-icons-container{
     display: flex;
     flex-direction: row;
@@ -120,6 +124,17 @@ contacts-input:valid ~ label {
     width: 60px;
     margin-left: 4px;
     margin-right: 4px;
+    transition: 0.5s;
+}
+
+.contacts-icons:hover{
+    transform: scale(1.1);
+    backface-visibility: hidden;
+}
+
+.contacts-icons:active{
+    transform: scale(0.8);
+    backface-visibility: hidden;
 }
 
 .contacts-icons-container a{

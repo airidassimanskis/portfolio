@@ -5,11 +5,7 @@ const About = () => {
     return (
         <div className="about">
             <h1>About me</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui,
-                quasi architecto expedita voluptatem atque at culpa magnam. Non,
-                sapiente beatae?
-            </p>
+            <p>hi ikj asak develoip;ed fullc stack oi enjoy programmjign</p>
         </div>
     )
 }

@@ -48,7 +48,7 @@ header .nav-btn {
 }
 
 .nav-btn:active {
-    transform: scale(0.5);
+    transform: scale(0.8);
     backface-visibility: hidden;
 }
 
