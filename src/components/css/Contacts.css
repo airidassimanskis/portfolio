@@ -37,8 +37,7 @@
 .contacts-label {
     position: absolute;
     left: 15px;
-    /* dont change */
-    color: #e8e8e800;
+    color: transparent;
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,7 +53,7 @@ contacts-input:valid {
 .contacts-input:focus ~ label,
 contacts-input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
-    background-color: #212121;
+    background-color: #0a0216;
     padding: 0 0.2em;
     color: #2196f3;
     visibility: visible;

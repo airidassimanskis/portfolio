@@ -36,7 +36,7 @@
 }
 
 .projects-button:hover span {
-    color: black;
+    color: var(--textHoverColor);
 }
 
 .projects-button::before,

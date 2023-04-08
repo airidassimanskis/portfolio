@@ -1,25 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Titillium Web", sans-serif;
 }
 
 header {
-    margin: 20px;
-    border-radius: 25px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
+    background: linear-gradient(#dd8e8e, #3a2222);
+    height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.logo-a {
+    position: relative;
+    margin: 20px;
+    text-decoration: none;
+    color: var(--textColor);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.logo-a:hover {
+    color: var(--textHoverColor);
 }
 
 nav a {
+    position: relative;
+    margin: 20px;
     margin: 0 1rem;
     text-decoration: none;
     transition: 0.5s;
@@ -36,6 +49,9 @@ nav a:active {
 }
 
 header .nav-btn {
+    position: absolute;
+    top: 4px;
+    right: 53px;
     padding: 5px;
     cursor: pointer;
     background: transparent;
@@ -87,15 +103,16 @@ nav {
         background-color: var(--mainColor);
         transition: 0.5s;
     }
-
+    
     header .responsive_nav {
+        clip-path: none;
         transform: translateY(100vh);
-        z-index: 100;
+        z-index: 999;
     }
 
     nav .nav-close-btn {
         position: absolute;
-        top: 38px;
+        top: 12px;
         right: 53px;
     }
 

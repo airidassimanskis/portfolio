@@ -1,11 +1,20 @@
 :root {
-    --mainColor: #52525e;
+    --mainColor: #6d6d7e;
+    --mainBackgroundColor: #0a0216;
+
+    --textColor: #ebe5e5;
+    --textHoverColor: #150926;
+    --secondaryColor: #eee;
+
+    /* --mainColor: #52525e;
     --mainBackgroundColor: #6d6d7e;
 
     --textColor: #ebe5e5;
-    --textHoverColor: #706a6a;
-    --secondaryColor: #eee;
-}
-html {
+    --textHoverColor: #1b1a1a;
+    --secondaryColor: #eee; */
+
+    color: var(--textColor);
+    background-color: #0a0216;
     scroll-behavior: smooth;
 }
+

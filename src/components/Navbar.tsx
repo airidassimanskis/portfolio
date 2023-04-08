@@ -10,8 +10,10 @@ const Navbar = () => {
     }
 
     return (
-        <header className="finisher-header">
-            <h3>devAS</h3>
+        <header>
+            <a className="logo-a" onClick={() => {window.scrollTo({top:0,behavior:"smooth"})}}>
+                <h3>&lt;dev&gt;Airidas&lt;/dev&gt;</h3>
+            </a>
             <nav ref={navRef}>
                 <a href="#about" onClick={() => {navRef.current.classList.toggle("responsive_nav")}}>About me</a>
                 <a href="#skills" onClick={() => {navRef.current.classList.toggle("responsive_nav")}}>Skills</a>

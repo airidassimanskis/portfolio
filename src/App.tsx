@@ -10,8 +10,6 @@ function App() {
         <div className="App">
             <Navbar />
             <h1>!!! WORK IN PROGRESS !!!</h1>
-            <h1>!!! WORK IN PROGRESS !!!</h1>
-            <h1>!!! WORK IN PROGRESS !!!</h1>
             <About />
             <Skills/>
             <Projects />
