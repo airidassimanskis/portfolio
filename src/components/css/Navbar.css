@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-:root {
-    --mainColor: #52525e;
-    --secondaryColor: #eee;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -21,17 +16,23 @@ header {
     height: 80px;
     padding: 0 2rem;
     background-color: var(--mainColor);
-    color: black;
+    color: var(--textColor);
 }
 
 nav a {
     margin: 0 1rem;
-    color: black;
     text-decoration: none;
+    transition: 0.5s;
+    color: var(--textColor);
 }
 
 nav a:hover {
-    color: var(--secondaryColor);
+    color: var(--textHoverColor);
+}
+
+nav a:active {
+    transform: scale(0.8);
+    backface-visibility: hidden;
 }
 
 header .nav-btn {
@@ -44,12 +45,16 @@ header .nav-btn {
     opacity: 0;
     font-size: 1.8rem;
     transition: 0.5s;
-    color: black;
+    color: var(--textColor);
 }
 
 .nav-btn:active {
-    transform: scale(0.5);
+    transform: scale(0.8);
     backface-visibility: hidden;
+}
+
+.nav-btn:hover {
+    color: var(--textHoverColor);
 }
 
 .nav-open-btn {
