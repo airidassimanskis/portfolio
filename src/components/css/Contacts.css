@@ -47,7 +47,7 @@
 .contacts-input:focus,
 contacts-input:valid {
     outline: none;
-    border: 1.5px solid #1a73e8;
+    border: 1.5px solid var(--textHoverColor);
 }
 
 .contacts-input:focus ~ label,
@@ -55,7 +55,7 @@ contacts-input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
     background-color: #0a0216;
     padding: 0 0.2em;
-    color: #2196f3;
+    color: var(--textHoverColor);
     visibility: visible;
 }
 
@@ -124,7 +124,10 @@ contacts-input:valid ~ label {
     width: 60px;
     margin-left: 4px;
     margin-right: 4px;
-    transition: 0.5s;
+    background: #eee;
+    border: 1.5px solid #eee;
+    border-radius: 30px;
+    transition: 0.1s ease
 }
 
 .contacts-icons:hover{

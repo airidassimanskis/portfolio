@@ -9,8 +9,8 @@ function App() {
     return (
         <div className="App">
             <Navbar />
-            <h1>!!! WORK IN PROGRESS !!!</h1>
             <About />
+            <h1>!!! WORK IN PROGRESS !!!</h1>
             <Skills/>
             <Projects />
             <Contacts />

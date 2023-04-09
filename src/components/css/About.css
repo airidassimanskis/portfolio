@@ -1,9 +1,10 @@
 .about{
     margin: 20px;
+    margin-top: 80px;
 }
 
 .about-text{
-    background-image: linear-gradient(#f5b0b0, #bb6262);
+    background-image: linear-gradient(#af8fdb, #7742c2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

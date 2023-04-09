@@ -12,14 +12,14 @@ header {
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
-    background: linear-gradient(#dd8e8e, #3a2222);
-    height: 300px;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    background-color: #908f91;
+    height: 100px;
 }
 
 .logo-a {
     position: relative;
     margin: 20px;
+    top: 20px;
     text-decoration: none;
     color: var(--textColor);
     transition: 0.5s;
@@ -50,7 +50,7 @@ nav a:active {
 
 header .nav-btn {
     position: absolute;
-    top: 4px;
+    top: 24px;
     right: 53px;
     padding: 5px;
     cursor: pointer;
@@ -102,17 +102,19 @@ nav {
         gap: 1.5rem;
         background-color: var(--mainColor);
         transition: 0.5s;
+        background-color: #0a0216;
     }
     
     header .responsive_nav {
-        clip-path: none;
+        position: fixed;
         transform: translateY(100vh);
-        z-index: 999;
+        z-index: 1000;
+        background-color: #0a0216;
     }
 
     nav .nav-close-btn {
         position: absolute;
-        top: 12px;
+        top: 31px;
         right: 53px;
     }
 
