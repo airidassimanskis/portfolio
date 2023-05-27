@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react"
+import { useRef } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import "./css/Navbar.css"
 
@@ -9,49 +9,58 @@ const Navbar = () => {
         navRef.current.classList.toggle("responsive_nav")
     }
 
+    const scrollToElement = (id: any) => {
+        if (navRef.current.classList.contains("responsive_nav")) {
+            navRef.current.classList.toggle("responsive_nav")
+        }
+        
+        const element = document.getElementById(id)
+        if (element) {
+            const navbarHeight = navRef.current.offsetHeight
+            const offsetTop = element.offsetTop - navbarHeight
+
+            const extraOffset = 20
+            const scrollToPosition = offsetTop - extraOffset
+
+            setTimeout(() => {
+                window.requestAnimationFrame(() => {
+                    window.scrollTo({
+                        top: scrollToPosition,
+                        behavior: "smooth",
+                    })
+                    console.log("scrolling to " + scrollToPosition)
+                })
+            }, 300)
+        }
+    }
+
+    const navItems = [
+        { id: "about", label: "About me" },
+        { id: "skills", label: "Skills" },
+        { id: "projects", label: "Projects" },
+        { id: "contacts", label: "Contacts" },
+    ]
+
     return (
         <header>
             <a
                 className="logo-a"
-                onClick={() => {
-                    window.scrollTo({ top: 0, behavior: "smooth" })
-                }}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
                 <h3>&lt;dev&gt;Airidas&lt;/dev&gt;</h3>
             </a>
             <nav ref={navRef}>
-                <a
-                    href="#about"
-                    onClick={() => {
-                        navRef.current.classList.toggle("responsive_nav")
-                    }}
-                >
-                    About me
-                </a>
-                <a
-                    href="#skills"
-                    onClick={() => {
-                        navRef.current.classList.toggle("responsive_nav")
-                    }}
-                >
-                    Skills
-                </a>
-                <a
-                    href="#projects"
-                    onClick={() => {
-                        navRef.current.classList.toggle("responsive_nav")
-                    }}
-                >
-                    Projects
-                </a>
-                <a
-                    href="#contacts"
-                    onClick={() => {
-                        navRef.current.classList.toggle("responsive_nav")
-                    }}
-                >
-                    Contacts
-                </a>
+                {navItems.map((item) => (
+                    <a
+                        key={item.id}
+                        href={`#${item.id}`}
+                        onClick={() => {
+                            scrollToElement(item.id)
+                        }}
+                    >
+                        {item.label}
+                    </a>
+                ))}
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>

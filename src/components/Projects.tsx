@@ -4,6 +4,15 @@ import "./css/Projects.css"
 const Projects = () => {
     const projects = [
         {
+            title: "Fencas.lt",
+            image: "",
+            description:
+                "A website for my brothers bussiness. If you need fences or gates built give him a call",
+            technologies: ["React", "TypeScript", "Tailwind.css", "Vite"],
+            // github: "https://github.com/airidassimanskis/fencas",
+            site: "https://fencas.lt/",
+        },
+        {
             title: "Restorant menu",
             image: "",
             description: "This was a school project done by a few people",
@@ -20,15 +29,6 @@ const Projects = () => {
             site: "https://airidassimanskis.vercel.app/",
         },
         {
-            title: "Fencas.lt",
-            image: "",
-            description:
-                "A website for my brothers bussiness. If you need fences or gates built give him a call",
-            technologies: ["React", "TypeScript", "Tailwind.css", "Vite"],
-            // github: "https://github.com/airidassimanskis/fencas",
-            site: "https://fencas.lt/",
-        },
-        {
             title: "E-Maitinimas Mobile App",
             image: "",
             description:
@@ -40,7 +40,29 @@ const Projects = () => {
                 "Node.js",
                 "MySQL",
             ],
-            site: "https://play.google.com/",
+            // site: "https://play.google.com/",
+        },
+        {
+            title: "Discord Bot",
+            image: "",
+            description: "A discord bot made with Nextcord, deployed by fly.io",
+            technologies: ["Python", "MongoDB"],
+            github: "https://github.com/airidassimanskis/discord-bot-public",
+            site: "https://top.gg/bot/853722386972147732",
+        },
+        {
+            title: "Advertising site",
+            image: "",
+            description:
+                "A website for posting advertisements, with full functionality and admin dashboard",
+            technologies: [
+                "Vanilla JavaScript",
+                "Firebase",
+                "BootStrap",
+                "Css",
+            ],
+            github: "https://github.com/airidassimanskis/skelbiu",
+            site: "https://skelbimu-puslapis.vercel.app/",
         },
     ]
 
@@ -72,14 +94,15 @@ const Projects = () => {
                                     <span>Code</span>
                                 </a>
                             )}
-
-                            <a
-                                className="project-button"
-                                href={project.site}
-                                target="_blank"
-                            >
-                                <span>Link</span>
-                            </a>
+                            {project.site && (
+                                <a
+                                    className="project-button"
+                                    href={project.site}
+                                    target="_blank"
+                                >
+                                    <span>Link</span>
+                                </a>
+                            )}
                         </div>
                     </div>
                 ))}

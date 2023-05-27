@@ -1,54 +1,143 @@
-.skills{
+.skills {
     margin: 20px;
-}
-
-.skills-main-container{
     display: flex;
     flex-direction: column;
+}
+
+.skills-main-container {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background-color: var(--cardColor);
     border-radius: 35px;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    align-self: center;
+    height: 200px;
+    position: relative;
 }
 
-.skills-title{
-    text-align: center;
+.skills-title {
+    margin-bottom: 5px;
 }
 
-.skills-wrapper{
+.skills-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
-.skills-express{
+.skills-express {
     background-color: #eee;
-    height: 15px;
-}
-.skills-express svg{
-    position: relative;
-    margin-top: -6px;
+    height: 20px;
 }
 
-.skills-item{
-    width: 30px !important;
+.skills-express svg {
+    position: relative;
+    margin-top: -14px;
+}
+
+.skills-item {
+    width: 50px !important;
     align-self: center;
 }
 
-
-/* .skills-languages{
-
+.skills-languages {
+    position: absolute;
+    top: 15px;
+    left: 20px;
 }
 
-.skills-front{
-
+.skills-front {
+    position: absolute;
+    top: 15px;
+    right: 20px;
 }
 
-.skills-back{
-
+.skills-back {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
 }
 
-.skills-other{
+.skills-other {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
 
-} */
+.skills-languages .skills-title {
+    text-align: left;
+}
+
+.skills-front .skills-title {
+    text-align: right;
+}
+
+.skills-back .skills-title {
+    text-align: left;
+}
+
+.skills-other .skills-title {
+    text-align: right;
+}
+
+@media (max-width: 728px) {
+    .skills-main-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .skills-languages {
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        margin-top: 15px;
+    }
+
+    .skills-front {
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+    }
+
+    .skills-back {
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+    }
+
+    .skills-other {
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        margin-bottom: 15px;
+    }
+
+    .skills-languages .skills-title {
+        text-align: center;
+    }
+
+    .skills-front .skills-title {
+        text-align: center;
+    }
+
+    .skills-back .skills-title {
+        text-align: center;
+    }
+
+    .skills-other .skills-title {
+        text-align: center;
+    }
+}

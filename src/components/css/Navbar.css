@@ -25,7 +25,7 @@ header {
     margin-left: 20px;
     text-decoration: none;
     color: var(--textColor);
-    transition: 0.5s;
+    transition: 200ms;
     cursor: pointer;
 }
 
@@ -38,7 +38,7 @@ nav a {
     margin: 20px;
     margin: 0 1rem;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 200ms;
     color: var(--textColor);
 }
 
@@ -60,7 +60,7 @@ header .nav-btn {
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
-    transition: 0.5s;
+    transition: 200ms;
     color: var(--textColor);
 }
 
@@ -101,7 +101,7 @@ nav {
         justify-content: center;
         gap: 1.5rem;
         background-color: var(--mainColor);
-        transition: 0.5s;
+        transition: 200ms;
         background-color: #0a0216;
     }
 

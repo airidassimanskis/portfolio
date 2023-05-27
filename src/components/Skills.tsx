@@ -210,7 +210,7 @@ const Skills = () => {
                         </div>
                         <div
                             className="skills-item"
-                            style={{ width: "30px", height: "30px" }}
+                            style={{ width: "50px", height: "50px" }}
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -450,13 +450,13 @@ const Skills = () => {
                         </div>
                         <div
                             className="skills-item"
-                            style={{ width: "30px", height: "30px" }}
+                            style={{ width: "50px", height: "50px" }}
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 32 32"
-                                width="30"
-                                height="30"
+                                width="50"
+                                height="50"
                             >
                                 <path
                                     d="M19.62 11.558l-3.203 2.98-2.972-5.995 1.538-3.448c.4-.7 1.024-.692 1.414 0z"
