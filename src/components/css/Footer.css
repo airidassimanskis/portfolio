@@ -1,0 +1,83 @@
+.footer-wrapper {
+    position: relative;
+    margin-top: 60px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.footer-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 300px;
+    border-radius: 50% 50% 0 0;
+    background-color: var(--cardColor);
+}
+
+.footer-copyright {
+    color: #3e3d3f;
+}
+
+.footer-links {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.footer-links a {
+    cursor: pointer;
+    color: var(--secondaryColor);
+    transition: all 0.3s ease-out;
+}
+
+.footer-clippath {
+    -webkit-clip-path: ellipse(60% 50% at 50% 89%);
+    clip-path: ellipse(60% 50% at 50% 89%);
+    background-color: var(--cardColor);
+}
+
+.footer-button {
+    margin-top: 40px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.footer-button {
+    color: var(--textColor);
+    padding-top: 1.8em;
+    display: inline-block; /* or block */
+    position: relative;
+    border-color: var(--textColor);
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+}
+.footer-button:before {
+    content: "▲";
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.7em;
+    border: solid 0.13em var(--textColor);
+    border-radius: 10em;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.3em;
+    border-color: inherit;
+    transition: transform 0.2s ease-in;
+}
+.footer-button:hover {
+    color: var(--textHoverColor);
+    border-color: var(--textHoverColor);
+}
+.footer-button:hover:before {
+    transform: rotate(360deg);
+}

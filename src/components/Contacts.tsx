@@ -16,7 +16,7 @@ const Contacts = () => {
 
     return (
         <div className="contacts" id="contacts">
-            <h1>Contacts</h1>
+            <h1 className="biiiig">Contacts</h1>
             <form className="contacts-form">
                 <div>
                     <div className="input-group">
@@ -55,29 +55,6 @@ const Contacts = () => {
                     <span>Send</span>
                 </button>
             </form>
-
-            <br />
-            <p><b>OR</b></p>
-            <br />
-            <div className="contacts-icons-container">
-                <a
-                    href="https://www.linkedin.com/in/airidas-%C5%A1imanskis-31638124b/"
-                    target="_blank"
-                >
-                    <img
-                        className="contacts-icons"
-                        src="./icons/linkedin.png"
-                        alt=""
-                    />
-                </a>
-                <a href="https://github.com/airidassimanskis" target="_blank">
-                    <img
-                        className="contacts-icons"
-                        src="./icons/github.png"
-                        alt=""
-                    />
-                </a>
-            </div>
         </div>
     )
 }

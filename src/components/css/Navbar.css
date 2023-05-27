@@ -5,21 +5,24 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
     display: flex;
     align-items: top;
     justify-content: space-between;
-    height: 80px;
+    height: 64px;
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
-    background-color: #908f91;
-    height: 100px;
+    background-color: var(--navbarBackgroundColor);
 }
 
 .logo-a {
     position: relative;
-    margin: 20px;
-    top: 20px;
+    margin: auto;
+    margin-left: 20px;
     text-decoration: none;
     color: var(--textColor);
     transition: 0.5s;
@@ -49,9 +52,6 @@ nav a:active {
 }
 
 header .nav-btn {
-    position: absolute;
-    top: 24px;
-    right: 53px;
     padding: 5px;
     cursor: pointer;
     background: transparent;
@@ -104,7 +104,7 @@ nav {
         transition: 0.5s;
         background-color: #0a0216;
     }
-    
+
     header .responsive_nav {
         position: fixed;
         transform: translateY(100vh);
@@ -114,8 +114,8 @@ nav {
 
     nav .nav-close-btn {
         position: absolute;
-        top: 31px;
-        right: 53px;
+        top: 15px;
+        right: 32px;
     }
 
     nav a {

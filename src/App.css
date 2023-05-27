@@ -1,20 +1,18 @@
 :root {
-    --mainColor: #6d6d7e;
+    --mainColor: #6d6dce;
+    --cardColor: #121212;
     --mainBackgroundColor: #0a0216;
-
+    --navbarBackgroundColor: #0a0216;
+    --primaryButton: #57178b;
     --textColor: #ebe5e5;
-    --textHoverColor: #874ed6;
+    --textHoverColor: #535bf2;
     --secondaryColor: #eee;
 
-    /* --mainColor: #52525e;
-    --mainBackgroundColor: #6d6d7e;
-
-    --textColor: #ebe5e5;
-    --textHoverColor: #1b1a1a;
-    --secondaryColor: #eee; */
-
     color: var(--textColor);
-    background-color: #0a0216;
+    background-color: var(--mainBackgroundColor);
     scroll-behavior: smooth;
 }
 
+.biiiig{
+    text-align: center;
+}
