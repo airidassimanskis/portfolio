@@ -10,17 +10,10 @@ const Navbar = () => {
     }
 
     const scrollToElement = (id: any) => {
-        if (navRef.current.classList.contains("responsive_nav")) {
-            navRef.current.classList.toggle("responsive_nav")
-        }
-        
         const element = document.getElementById(id)
         if (element) {
-            const navbarHeight = navRef.current.offsetHeight
-            const offsetTop = element.offsetTop - navbarHeight
-
-            const extraOffset = 20
-            const scrollToPosition = offsetTop - extraOffset
+            const offsetTop = element.offsetTop - 64
+            const scrollToPosition = offsetTop - 20
 
             setTimeout(() => {
                 window.requestAnimationFrame(() => {
@@ -28,9 +21,8 @@ const Navbar = () => {
                         top: scrollToPosition,
                         behavior: "smooth",
                     })
-                    console.log("scrolling to " + scrollToPosition)
                 })
-            }, 300)
+            }, 150)
         }
     }
 
@@ -55,6 +47,9 @@ const Navbar = () => {
                         key={item.id}
                         href={`#${item.id}`}
                         onClick={() => {
+                            if (navRef.current.classList.contains("responsive_nav")) {
+                                showNavbar()
+                            }
                             scrollToElement(item.id)
                         }}
                     >

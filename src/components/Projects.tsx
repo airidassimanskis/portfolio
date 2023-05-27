@@ -51,7 +51,7 @@ const Projects = () => {
             site: "https://top.gg/bot/853722386972147732",
         },
         {
-            title: "Advertising site",
+            title: "Advertisment website",
             image: "",
             description:
                 "A website for posting advertisements, with full functionality and admin dashboard",

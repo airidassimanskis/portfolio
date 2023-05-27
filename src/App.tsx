@@ -12,8 +12,8 @@ function App() {
     return (
         <div className="App">
             <Navbar />
+            <h1 style={{ color: "red" }}>!!!  WORK IN PROGRESS !!!</h1>
             <About />
-            <h1 style={{ color: "red" }}>!!! WORK IN PROGRESS !!!</h1>
             <Skills/>
             <Projects />
             <Contacts />

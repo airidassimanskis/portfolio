@@ -1,14 +1,19 @@
-.about{
-    margin-top: 80px;
+.about {
+    margin: auto;
+    margin-top: 20px;
     width: 100%;
+    max-width: 800px;
 }
 
-.about-text{
-    width: 80%;
+.about-text {
     margin: auto;
-    background-image: linear-gradient(#af8fdb, #7742c2);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--textColor);
     max-width: 500px;
+
+}
+
+.about-text-wrapper {
+    background-color: var(--cardColor);
+    border-radius: 35px;
+    padding: 35px;
 }
