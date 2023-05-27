@@ -83,16 +83,21 @@ contacts-input:valid ~ label {
     overflow: hidden;
     background-color: var(--primaryButton);
     color: var(--textColor);
+    transition: ease-in-out 50ms;
 }
 
 .contacts-button span {
     position: relative;
     z-index: 10;
-    transition: color 0.4s;
+    transition: color 150ms;
 }
 
 .contacts-button:hover span {
     color: var(--textHoverColor);
+}
+
+.contacts-button:active {
+    transform: scale(0.95);
 }
 
 @media (max-width: 728px) {

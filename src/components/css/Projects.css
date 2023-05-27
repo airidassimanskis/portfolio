@@ -38,8 +38,36 @@
     justify-content: space-evenly;
 }
 
-.project-button{
-    width: 60px;
+.project-button {
+    width: 80px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--primaryButton);
+    color: var(--textColor);
+    transition: ease-in-out 50ms;
+}
+
+.project-button span {
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    transition: color 150ms;
+}
+
+.project-button:hover span {
+    color: var(--textHoverColor);
+}
+
+.project-button:active {
+    transform: scale(0.95);
 }
 
 @media (max-width: 1000px) {

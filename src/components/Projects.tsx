@@ -86,22 +86,24 @@ const Projects = () => {
                         </p>
                         <div className="project-links">
                             {project.github && (
-                                <a
+                                <button
                                     className="project-button"
-                                    href={project.github}
-                                    target="_blank"
+                                    onClick={() =>{
+                                        window.open(project.github, "_blank")
+                                    }}
                                 >
                                     <span>Code</span>
-                                </a>
+                                </button>
                             )}
                             {project.site && (
-                                <a
+                                <button
                                     className="project-button"
-                                    href={project.site}
-                                    target="_blank"
+                                    onClick={() =>{
+                                        window.open(project.site, "_blank")
+                                    }}
                                 >
                                     <span>Link</span>
-                                </a>
+                                </button>
                             )}
                         </div>
                     </div>
