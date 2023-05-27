@@ -60,7 +60,7 @@ contacts-input:valid {
 .contacts-input:focus ~ label,
 contacts-input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
-    background-color: var(--mainBackgroundColor);
+    background-color: var(--cardColor);
     padding: 0 0.2em;
     color: var(--textHoverColor);
     visibility: visible;
@@ -93,4 +93,11 @@ contacts-input:valid ~ label {
 
 .contacts-button:hover span {
     color: var(--textHoverColor);
+}
+
+@media (max-width: 728px) {
+    .contacts-form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
