@@ -33,9 +33,13 @@
 }
 
 .footer-links a {
-    cursor: pointer;
     color: var(--secondaryColor);
     transition: all 0.3s ease-out;
+}
+
+.footer-links a:hover {
+    cursor: pointer;
+    color: var(--anchorColor);
 }
 
 .footer-button {
@@ -71,8 +75,8 @@
 }
 
 .footer-button:hover {
-    color: var(--textHoverColor);
-    border-color: var(--textHoverColor);
+    color: var(--anchorColor);
+    border-color: var(--anchorColor);
 }
 
 .footer-button:hover:before {

@@ -11,13 +11,12 @@ function App() {
 
     return (
         <div className="App">
-            <Navbar />
-            <h1 style={{ color: "red" }}>!!!  WORK IN PROGRESS !!!</h1>
+            <Navbar/>
             <About />
-            <Skills/>
+            <Skills />
             <Projects />
             <Contacts />
-            <Footer/>
+            <Footer />
         </div>
     )
 }
