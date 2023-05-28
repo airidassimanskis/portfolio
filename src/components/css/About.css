@@ -9,7 +9,7 @@
     margin: auto;
     color: var(--textColor);
     max-width: 500px;
-
+    text-indent: 35px;
 }
 
 .about-text-wrapper {
@@ -18,7 +18,7 @@
     padding: 35px;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 834px) {
     .about-text-wrapper {
         margin-left: 20px;
         margin-right: 20px;

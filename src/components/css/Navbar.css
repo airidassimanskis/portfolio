@@ -14,7 +14,6 @@ header {
     justify-content: space-between;
     height: 64px;
     padding: 0 2rem;
-    background-color: var(--mainColor);
     color: var(--textColor);
     background-color: var(--navbarBackgroundColor);
 }
@@ -100,16 +99,14 @@ nav {
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: var(--mainColor);
         transition: 200ms;
-        background-color: #0a0216;
     }
 
     header .responsive_nav {
         position: fixed;
         transform: translateY(100vh);
         z-index: 1000;
-        background-color: #0a0216;
+        background-color: var(--navbarBackgroundColor);
     }
 
     nav .nav-close-btn {

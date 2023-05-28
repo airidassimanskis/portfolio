@@ -3,7 +3,6 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai"
 
 const Footer = () => {
     return (
-        <div>
             <footer className="footer-wrapper">
                 <div className="footer-links">
                     <a
@@ -36,7 +35,6 @@ const Footer = () => {
                 </p>
                 <i className="footer-button" onClick={() => window.scrollTo(0, 0)}></i>
             </footer>
-        </div>
     )
 }
 

@@ -51,7 +51,7 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: var(--primaryButton);
-    color: var(--textColor);
+    color: var(--buttonTextColor);
     transition: ease-in-out 50ms;
 }
 

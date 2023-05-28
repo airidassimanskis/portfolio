@@ -1,15 +1,58 @@
 :root {
-    --mainColor: #6d6dce;
+    
+    /* * v0 5/10 */
+    /* --mainBackgroundColor: #0a0216;
     --cardColor: #121212;
-    --mainBackgroundColor: #0a0216;
     --navbarBackgroundColor: #0a0216;
-    --navbarHoverColor: #646cff;
     --primaryButton: #5f263c;
-    --textColor: #ebe5e5;
     --textHoverColor: #9b7181;
+    --inputFocusColor: #5f263c;
+    --navbarHoverColor: #5f263c;
+    --buttonTextColor: #ebe5e5;
+    --textColor: #ebe5e5;
     --secondaryColor: #eee;
+    --anchorColor: #5f263c; */
+    
+    
+    /* * v1 7/10 */
+    /* --mainBackgroundColor: #1f1e22;
+    --cardColor: #121212;
+    --navbarBackgroundColor: #1f1e22;
+    --primaryButton: #eee;
+    --textHoverColor: #646cff;
+    --inputFocusColor: #646cff;
+    --navbarHoverColor: #646cff;
+    --buttonTextColor: #111010;
+    --textColor: #ebe5e5;
+    --secondaryColor: #eee;
+    --anchorColor: #646cff; */
 
-    --anchorColor: #646cff;
+    /* * v2 7.5/10 */
+    /* --mainBackgroundColor: #1f1e22;
+    --cardColor: #121212;
+    --navbarBackgroundColor: #1f1e22;
+    --primaryButton: #5f263c;
+    --textHoverColor: #eee;
+    --inputFocusColor: #5f263c;
+    --navbarHoverColor: #5f263c;
+    --buttonTextColor: #111010;
+    --textColor: #ebe5e5;
+    --secondaryColor: #eee;
+    --anchorColor: #5f263c; */
+
+    /* * v3 7.5/10*/
+    --mainBackgroundColor: #1f1e22;
+    --cardColor: #121212;
+    --navbarBackgroundColor: #1f1e22;
+    --primaryButton: #5f263c;
+    --textHoverColor: #121212;
+    --inputFocusColor: #5f263c;
+    --navbarHoverColor: #5f263c;
+    --buttonTextColor: #ebe5e5;
+    --textColor: #ebe5e5;
+    --secondaryColor: #eee;
+    --anchorColor: #5f263c;
+
 
     color: var(--textColor);
     background-color: var(--mainBackgroundColor);

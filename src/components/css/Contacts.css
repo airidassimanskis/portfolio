@@ -54,7 +54,7 @@
 .contacts-input:focus,
 contacts-input:valid {
     outline: none;
-    border: 1.5px solid var(--textHoverColor);
+    border: 1.5px solid var(--inputFocusColor);
 }
 
 .contacts-input:focus ~ label,
@@ -62,7 +62,7 @@ contacts-input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
     background-color: var(--cardColor);
     padding: 0 0.2em;
-    color: var(--textHoverColor);
+    color: var(--inputFocusColor);
     visibility: visible;
 }
 
@@ -82,7 +82,7 @@ contacts-input:valid ~ label {
     border-radius: 15px;
     overflow: hidden;
     background-color: var(--primaryButton);
-    color: var(--textColor);
+    color: var(--buttonTextColor);
     transition: ease-in-out 50ms;
 }
 
@@ -100,7 +100,7 @@ contacts-input:valid ~ label {
     transform: scale(0.95);
 }
 
-@media (max-width: 728px) {
+@media (max-width: 834px) {
     .contacts-form {
         margin-left: 20px;
         margin-right: 20px;
