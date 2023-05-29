@@ -7,7 +7,7 @@ const About = () => {
             <h1 className="biiiig">About me</h1>
             <div className="about-text-wrapper">
                 <h4 className="about-text">
-                    Hi, I'm Airidas, I began programming as a hobby in 2021 and
+                    I began programming as a hobby in 2021 and
                     taught myself Python. After graduating high school, I
                     pursued programming further by enrolling in KITM, where I
                     learned both front-end and back-end web development. During

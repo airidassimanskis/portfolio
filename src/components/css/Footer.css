@@ -7,6 +7,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    overflow: hidden;
 }
 
 .footer-wrapper::after {
@@ -16,7 +17,7 @@
     z-index: -1;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 120%;
     height: 300px;
     border-radius: 50% 50% 0 0;
     background-color: var(--cardColor);
@@ -43,42 +44,46 @@
 }
 
 .footer-button {
-    margin-top: 40px;
-    align-self: center;
-    cursor: pointer;
-}
-
-.footer-button {
-    color: var(--textColor);
-    padding-top: 1.8em;
-    display: block;
-    position: relative;
-    border-color: var(--textColor);
-    text-decoration: none;
-    transition: all 0.2s ease-out;
-}
-
-.footer-button:before {
-    content: "▲";
-    font-size: 32px;
     position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -0.7em;
-    border: solid 0.13em var(--textColor);
-    border-radius: 10em;
-    width: 1.4em;
-    height: 1.4em;
-    line-height: 1.3em;
-    border-color: inherit;
-    transition: transform 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 180px;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid var(--secondaryColor);
+
+    transition: all 150ms;
+    text-align: center;
+    color: var(--secondaryColor);
 }
 
 .footer-button:hover {
-    color: var(--anchorColor);
-    border-color: var(--anchorColor);
+    border: 3px solid var(--primaryButton);
+    cursor: pointer;
+    transform: rotate(360deg) scale(1.1);
+    color: var(--primaryButton);
 }
 
-.footer-button:hover:before {
-    transform: rotate(360deg);
+.footer-button:active {
+    transform: scale(0.9);
+}
+
+.footer-button:hover .footer-button-arrow {
+    background: var(--primaryButton);
+    transform: scale(1.1);
+}
+
+.footer-button-arrow {
+    width: 25px;
+    height: 25px;
+
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+
+    background: var(--secondaryColor);
 }

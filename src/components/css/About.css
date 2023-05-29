@@ -9,7 +9,7 @@
     margin: auto;
     color: var(--textColor);
     max-width: 500px;
-    text-indent: 35px;
+    text-align: center;
 }
 
 .about-text-wrapper {
