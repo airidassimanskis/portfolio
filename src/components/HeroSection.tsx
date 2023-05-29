@@ -21,14 +21,21 @@ const HeroSection = () => {
 
     return (
         <div className="hero-wrapper">
-            <img className="hero-svg" src="./hero.svg" draggable="false"/>
-            <h1 className="hero-title">
-                Hi, I'm Airidas, a full-stack web developer
-            </h1>
+            <img className="hero-svg" src="./hero.svg" draggable="false" />
 
-            <button 
-            className="hero-down-button"
-            onClick={() => scrollToElement("about")}>
+            <div className="hero-scroll">
+                <p>Hi, I'm</p>
+                <div className="hero-words">
+                    <span>Airidas Šimanskis</span>
+                    <span>a Full-Stack web developer</span>
+                    <span>making your ideas come to life</span>
+                </div>
+            </div>
+
+            <button
+                className="hero-down-button"
+                onClick={() => scrollToElement("about")}
+            >
                 <div className="hero-down-button-arrow"></div>
             </button>
         </div>

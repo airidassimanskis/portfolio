@@ -14,18 +14,6 @@
     height: 100vh;
 }
 
-.hero-title {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid var(--mainBackgroundColor);
-    background-color: var(--mainBackgroundColor);
-    padding: 15px;
-    border-radius: 15px;
-    text-align: center;
-}
-
 .hero-down-button {
     position: absolute;
     display: flex;
@@ -55,7 +43,7 @@
     transform: scale(0.9);
 }
 
-.hero-down-button:hover .hero-down-button-arrow{
+.hero-down-button:hover .hero-down-button-arrow {
     background: var(--primaryButton);
     transform: scale(1.1);
 }
@@ -63,14 +51,99 @@
 .hero-down-button-arrow {
     width: 25px;
     height: 25px;
-    
+
     -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
     clip-path: polygon(50% 100%, 0 0, 100% 0);
     background: var(--secondaryColor);
 }
 
-@media (max-width: 620px) {
-    .hero-title {
-        width: 80%;
+.hero-scroll {
+    position: absolute;
+    display: flex;
+    height: 100px;
+    top: 25%;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 32px;
+    border: 1px solid transparent;
+    background-color: var(--mainBackgroundColor);
+    padding: 15px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+.hero-scroll p {
+    align-self: center;
+}
+
+.hero-words {
+    overflow: hidden;
+}
+
+.hero-words span {
+    display: block;
+    text-align: left;
+    margin: auto;
+    height: 60px;
+    line-height: 60px;
+    width: 320px;
+    margin-left: 16px;
+    border-radius: 15px;
+    animation: spin-words 5s infinite;
+    background-color: var(--primaryButton);
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: 22px;
+}
+
+.hero-words span text {
+    align-self: center;
+}
+
+/* pirmas 0px
+antras -60px
+trecias -120px */
+
+@keyframes spin-words {
+    10% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(-74px);
+    }
+    40% {
+        transform: translateY(-68px);
+    }
+    60% {
+        transform: translateY(-144px);
+    }
+    70% {
+        transform: translateY(-136px);
+    }
+    90% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 512px) {
+    .hero-scroll {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 428px) {
+    .hero-scroll {
+        transform: scale(0.8);
+    }
+    .hero-scroll p {
+        font-size: 24px;
+    }
+}
+@media (max-width: 380px) {
+    .hero-scroll {
+        transform: scale(0.65);
+    }
+    .hero-scroll p {
+        font-size: 24px;
     }
 }

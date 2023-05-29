@@ -35,12 +35,16 @@
 
 .footer-links a {
     color: var(--secondaryColor);
-    transition: all 0.3s ease-out;
+    transition: all 150ms ease-out;
 }
 
 .footer-links a:hover {
     cursor: pointer;
     color: var(--anchorColor);
+}
+
+.footer-links a:active {
+    transform: scale(0.9);
 }
 
 .footer-button {
