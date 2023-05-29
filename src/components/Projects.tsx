@@ -4,13 +4,14 @@ import "./css/Projects.css"
 const Projects = () => {
     const projects = [
         {
-            title: "Fencas.lt",
+            title: "Fencas.lt (Temp link)",
             image: "",
             description:
                 "A website for my brothers bussiness. If you need fences or gates built give him a call",
             technologies: ["React", "TypeScript", "Tailwind.css", "Vite"],
             // github: "https://github.com/airidassimanskis/fencas",
             // site: "https://fencas.lt/",
+            site: "https://fencas.vercel.app/",
         },
         {
             title: "Restorant menu",
