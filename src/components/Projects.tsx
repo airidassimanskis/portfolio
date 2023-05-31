@@ -46,7 +46,7 @@ const Projects = () => {
         {
             title: "Discord Bot",
             image: "",
-            description: "A discord bot made with Nextcord, deployed by fly.io",
+            description: "A discord bot made with Nextcord, deployed with fly.io",
             technologies: ["Python", "MongoDB"],
             github: "https://github.com/airidassimanskis/discord-bot-public",
             site: "https://top.gg/bot/853722386972147732",
