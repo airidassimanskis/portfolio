@@ -7,7 +7,7 @@ const Projects = () => {
             title: "Fencas.lt (Temp link)",
             image: "",
             description:
-                "A website for my brothers bussiness. If you need fences or gates built give him a call",
+                "A website for my brothers bussiness.",
             technologies: ["React", "TypeScript", "Tailwind.css", "Vite"],
             // github: "https://github.com/airidassimanskis/fencas",
             // site: "https://fencas.lt/",
