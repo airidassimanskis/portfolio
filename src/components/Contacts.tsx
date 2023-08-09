@@ -16,7 +16,7 @@ const Contacts = () => {
 
     return (
         <div className="contacts" id="contacts">
-            <h1 className="biiiig">Contacts</h1>
+            <h1 className="biiiig">Contact me</h1>
             <form className="contacts-form">
                 <div>
                     <div className="input-group">

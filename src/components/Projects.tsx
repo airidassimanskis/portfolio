@@ -74,11 +74,11 @@ const Projects = () => {
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>
                         <h3 className="project-title">{project.title}</h3>
-                        <img
+                        {/* <img
                             className="project-image"
                             src={project.image}
                             alt=""
-                        />
+                        /> */}
                         <p className="project-description">
                             {project.description}
                         </p>

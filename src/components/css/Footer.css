@@ -85,6 +85,7 @@
 .footer-button-arrow {
     width: 25px;
     height: 25px;
+    margin-bottom: 5px;
 
     -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
