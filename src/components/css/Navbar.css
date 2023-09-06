@@ -18,7 +18,7 @@ header {
     background-color: var(--navbarBackgroundColor);
 }
 
-.logo-a {
+.logo {
     position: relative;
     margin: auto;
     margin-left: 20px;
@@ -28,8 +28,35 @@ header {
     cursor: pointer;
 }
 
-.logo-a:hover {
+.logo:hover {
     color: var(--navbarHoverColor);
+}
+
+.navbar-typewriter-text {
+    overflow: hidden;
+    border-right: 0.15em solid var(--navbarHoverColor);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(40, end), blink-effect 1060ms step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-effect {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--navbarHoverColor);
+    }
 }
 
 nav a {

@@ -7,14 +7,14 @@ const Projects = () => {
             title: "Fencas.lt (Temp link)",
             image: "",
             description:
-                "A website for my brothers bussiness.",
+                "A website for my brother's bussiness",
             technologies: ["React", "TypeScript", "Tailwind.css", "Vite"],
             // github: "https://github.com/airidassimanskis/fencas",
             // site: "https://fencas.lt/",
             site: "https://fencas.vercel.app/",
         },
         {
-            title: "Restorant menu",
+            title: "Restaurant menu",
             image: "",
             description: "This was a school project done by a few people",
             technologies: ["Vanilla JavaScript", "HTML", "Bootstrap"],
@@ -46,8 +46,8 @@ const Projects = () => {
         {
             title: "Discord Bot",
             image: "",
-            description: "A discord bot made with Nextcord, deployed with fly.io",
-            technologies: ["Python", "MongoDB"],
+            description: "A discord bot made with nextcord, deployed with fly.io",
+            technologies: ["Python", "nextcord","MongoDB"],
             github: "https://github.com/airidassimanskis/discord-bot-public",
             site: "https://top.gg/bot/853722386972147732",
         },

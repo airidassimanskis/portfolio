@@ -9,20 +9,60 @@ const Navbar = () => {
         navRef.current.classList.toggle("responsive_nav")
     }
 
-    const scrollToElement = (id: any) => {
+    const scrollToElement = (id: string) => {
         const element = document.getElementById(id)
         if (element) {
-            const offsetTop = element.offsetTop - 64
-            const scrollToPosition = offsetTop - 20
+            const headerHeight = 100
+            const elementRect = element.getBoundingClientRect()
+            const targetScrollPosition =
+                elementRect.top + window.scrollY - headerHeight
 
-            setTimeout(() => {
-                window.requestAnimationFrame(() => {
+            const navRef = document.querySelector("nav")
+
+            if (navRef) {
+                navRef.style.transition = "none"
+            }
+
+            const animationDuration = 500
+            const easing = (t: number) => t
+
+            const startTime = performance.now()
+            const initialScrollY = window.scrollY
+
+            const animateScroll = (currentTime: number) => {
+                const elapsed = currentTime - startTime
+
+                if (elapsed < animationDuration) {
+                    const progress = easing(elapsed / animationDuration)
+                    const newScrollY =
+                        initialScrollY +
+                        progress * (targetScrollPosition - initialScrollY)
+
                     window.scrollTo({
-                        top: scrollToPosition,
+                        top: newScrollY,
+                        behavior: "auto",
+                    })
+
+                    requestAnimationFrame(animateScroll)
+                } else {
+                    window.scrollTo({
+                        top: targetScrollPosition,
                         behavior: "smooth",
                     })
-                })
-            }, 150)
+
+                    if (navRef) {
+                        setTimeout(() => {
+                            navRef.style.transition = ""
+                        }, 500)
+                    }
+                }
+            }
+
+            requestAnimationFrame(animateScroll)
+
+            if (navRef && navRef.classList.contains("responsive_nav")) {
+                showNavbar()
+            }
         }
     }
 
@@ -30,16 +70,19 @@ const Navbar = () => {
         { id: "about", label: "About me" },
         { id: "skills", label: "Skills" },
         { id: "projects", label: "Projects" },
+        { id: "qualifications", label: "Resume" },
         { id: "contacts", label: "Contact me" },
     ]
 
     return (
         <header>
             <a
-                className="logo-a"
+                className="logo"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-                <h3>&lt;dev&gt;Airidas&lt;/dev&gt;</h3>
+                <h3 className="navbar-typewriter-text">
+                    &lt;dev&gt;Airidas&lt;/dev&gt;
+                </h3>
             </a>
             <nav ref={navRef}>
                 {navItems.map((item) => (
@@ -47,7 +90,11 @@ const Navbar = () => {
                         key={item.id}
                         href={`#${item.id}`}
                         onClick={() => {
-                            if (navRef.current.classList.contains("responsive_nav")) {
+                            if (
+                                navRef.current.classList.contains(
+                                    "responsive_nav"
+                                )
+                            ) {
                                 showNavbar()
                             }
                             scrollToElement(item.id)

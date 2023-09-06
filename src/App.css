@@ -1,5 +1,4 @@
 :root {
-    
     /* * v0 5/10 */
     /* --mainBackgroundColor: #0a0216;
     --cardColor: #121212;
@@ -12,8 +11,7 @@
     --textColor: #ebe5e5;
     --secondaryColor: #eee;
     --anchorColor: #5f263c; */
-    
-    
+
     /* * v1 7/10 */
     /* --mainBackgroundColor: #1f1e22;
     --cardColor: #121212;
@@ -53,7 +51,6 @@
     --secondaryColor: #eee;
     --anchorColor: #5f263c;
 
-
     color: var(--textColor);
     background-color: var(--mainBackgroundColor);
     scroll-behavior: smooth;
@@ -71,4 +68,17 @@ a {
 }
 a:hover {
     color: var(--textHoverColor);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 500ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }

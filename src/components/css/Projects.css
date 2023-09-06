@@ -82,6 +82,13 @@
 @media (max-width: 1000px) {
     .project-card {
         width: 100%;
-        flex-basis: 90%;
+        max-width: 800px;
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .projects-flex{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

@@ -13,10 +13,9 @@
     gap: 15px;
     width: 100%;
     max-width: 800px;
-    align-self: center;
     height: 280px;
     position: relative;
-    margin: 20px;
+    margin: auto;
 }
 
 .skills-title {
@@ -36,7 +35,7 @@
     height: 20px;
 }
 
-.skills-express svg {
+.skills-express img {
     position: relative;
     margin-top: -14px;
 }
@@ -140,5 +139,13 @@
 
     .skills-other .skills-title {
         text-align: center;
+    }
+}
+
+@media (max-width: 834px) {
+    .skills-main-container {
+        width: unset;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

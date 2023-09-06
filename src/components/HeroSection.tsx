@@ -2,20 +2,44 @@ import React from "react"
 import "./css/HeroSection.css"
 
 const HeroSection = () => {
-    const scrollToElement = (id: any) => {
+    const scrollToElement = (id: string) => {
         const element = document.getElementById(id)
         if (element) {
-            const offsetTop = element.offsetTop - 64
-            const scrollToPosition = offsetTop - 20
+            const headerHeight = 100
+            const elementRect = element.getBoundingClientRect()
+            const targetScrollPosition =
+                elementRect.top + window.scrollY - headerHeight
 
-            setTimeout(() => {
-                window.requestAnimationFrame(() => {
+            const animationDuration = 500
+            const easing = (t: number) => t
+
+            const startTime = performance.now()
+            const initialScrollY = window.scrollY
+
+            const animateScroll = (currentTime: number) => {
+                const elapsed = currentTime - startTime
+
+                if (elapsed < animationDuration) {
+                    const progress = easing(elapsed / animationDuration)
+                    const newScrollY =
+                        initialScrollY +
+                        progress * (targetScrollPosition - initialScrollY)
+
                     window.scrollTo({
-                        top: scrollToPosition,
+                        top: newScrollY,
+                        behavior: "auto",
+                    })
+
+                    requestAnimationFrame(animateScroll)
+                } else {
+                    window.scrollTo({
+                        top: targetScrollPosition,
                         behavior: "smooth",
                     })
-                })
-            }, 150)
+                }
+            }
+
+            requestAnimationFrame(animateScroll)
         }
     }
 
