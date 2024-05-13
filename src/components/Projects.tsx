@@ -4,14 +4,22 @@ import "./css/Projects.css"
 const Projects = () => {
     const projects = [
         {
-            title: "Fencas.lt (Temp link)",
+            title: "Example business site",
             image: "",
             description:
-                "A website for my brother's bussiness",
+                "An example website for a business",
             technologies: ["React", "TypeScript", "Tailwind.css", "Vite"],
-            // github: "https://github.com/airidassimanskis/fencas",
-            // site: "https://fencas.lt/",
+            github: "https://github.com/airidassimanskis/fencas",
             site: "https://fencas.vercel.app/",
+        },
+        {
+            title: "Trivia game (W.I.P)",
+            image: "",
+            description:
+                "Trivia game, WORK IN PROGRESS",
+            technologies: ["React", "Next.js", "TypeScript", "Tailwind.css"],
+            github: "https://github.com/airidassimanskis/trivia-singleplayer",
+            site: "https://triviaq.vercel.app/",
         },
         {
             title: "Restaurant menu",
@@ -41,7 +49,6 @@ const Projects = () => {
                 "Node.js",
                 "MySQL",
             ],
-            // site: "https://play.google.com/",
         },
         {
             title: "Discord Bot",
@@ -50,20 +57,6 @@ const Projects = () => {
             technologies: ["Python", "nextcord","MongoDB"],
             github: "https://github.com/airidassimanskis/discord-bot-public",
             site: "https://top.gg/bot/853722386972147732",
-        },
-        {
-            title: "Advertisment website",
-            image: "",
-            description:
-                "A website for posting advertisements, with full functionality and admin dashboard",
-            technologies: [
-                "Vanilla JavaScript",
-                "Firebase",
-                "BootStrap",
-                "Css",
-            ],
-            github: "https://github.com/airidassimanskis/skelbiu",
-            site: "https://skelbimu-puslapis.vercel.app/",
         },
     ]
 
