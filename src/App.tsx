@@ -11,7 +11,7 @@ import Qualifications from "./components/Qualifications"
 import { useEffect } from "react"
 
 function App() {
-    console.log("Labas :D")
+    console.log("Hi :D")
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {

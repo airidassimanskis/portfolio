@@ -51,6 +51,20 @@ const Projects = () => {
             ],
         },
         {
+            title: "Internal ordering system",
+            image: "",
+            description:
+                "A website for a company to simplify ordering products from manufacturers",
+            technologies: [
+                "React",
+                "Next.js",
+                "Tailwind.css",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+            ],
+        },
+        {
             title: "Discord Bot",
             image: "",
             description: "A discord bot made with nextcord, deployed with fly.io",
